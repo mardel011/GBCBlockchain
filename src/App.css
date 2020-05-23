@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  font-family: "Raleway", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 1;
+  width: 100%;
+  height: 65px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar-links li a:hover {
+  color: #199197;
+}
+
+.home-section{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 800px;
+}
+
+.about-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 800px;
+  font-family: arial;
+}
+
+.contact-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 350px;
+}
+
+.-home-section {
+  background: #262626;
+}
+
+.about-section {
+  background: #fefefe;
+}
+
+.contact-section {
+  background: #262626;
+  color: #fff;
+}
+
+.home-section::before {
+  background-image: url(blockchain.png); /*crediting image - https://pixabay.com/illustrations/blockchain-block-chain-technology-3019120/*/
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.3;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  border: solid 5px #333;
+  margin-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.banner {
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+}
+
+.info {
+  font-size: 20px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.info2 {
+  margin-bottom: 100px;
+}
+
+.header2 {
+  margin-bottom: 100px;
+}
+
+.container1 {
+  width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 20px;
+}
+
+a {
+  color: #199197;
+}
+
+html {
+  scroll-behavior: smooth;
+}
