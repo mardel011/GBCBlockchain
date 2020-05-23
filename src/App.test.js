@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import CSS from './App.css'
+import JS from './App.js'
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -19,3 +20,12 @@ test('It has to contain header2', () => {
   const style = window.getComputedStyle(MyHeaderRoots[0])
   expect(style.margin-bottom).toBe('100px')
 });
+
+test('It has to contain Home', () => {
+    render(
+      <div>
+        <JS />
+      </div>
+    )
+    expect(queryByTestId("home")).toBeInTheDOM();
+  });
