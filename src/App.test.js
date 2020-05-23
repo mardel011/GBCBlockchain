@@ -8,7 +8,6 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
 });
 
-afterEach(cleanup)
 test('It has to contain header2', () => {
   render(
     <div>
